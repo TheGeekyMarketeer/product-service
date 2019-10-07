@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+
+  web:
+    image: product-service-webhost-conf
+    ports:
+     - 8086:80
+
+  app:
+    image: product-service-app-svc
+    deploy:
+      replicas: 5
+      endpoint_mode: dnsrr
+      resources:
+        limits:
+          memory: 16M
+        reservations:
+          memory: 16M
+
+  db:
+    image: product-service-db
