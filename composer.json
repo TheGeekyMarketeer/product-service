@@ -9,10 +9,13 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "darkaonline/l5-swagger": "^6.0",
         "fideloper/proxy": "^4.0",
         "jrm2k6/cloudder": "0.6.*",
         "laravel/framework": "^6.0",
-        "laravel/tinker": "^1.0"
+        "laravel/tinker": "^1.0",
+        "mll-lab/laravel-graphql-playground": "^1.1",
+        "nuwave/lighthouse": "^4.4"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
